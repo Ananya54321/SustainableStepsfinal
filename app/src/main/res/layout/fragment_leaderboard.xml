@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="#15023D"
+    android:padding="0dp"
+    android:scrollbars="none">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/gifimage"
+                            android:layout_width="370dp"
+                            android:layout_height="109dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/backButtonLevels"
+                            app:srcCompat="@drawable/whitebackground" />
+
+                        <ImageButton
+                            android:id="@+id/backButtonLevels"
+                            android:layout_width="66dp"
+                            android:layout_height="59dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:background="#3E456C"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/arrowright"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/congratsMessage"
+                            android:layout_width="331dp"
+                            android:layout_height="124dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/shape"
+                            android:fontFamily="@font/merriweathersans_semibold"
+                            android:padding="16dp"
+                            android:radius="12dp"
+                            android:text="Congratulations level 2"
+                            android:textSize="24dp"
+                            app:layout_constraintEnd_toEndOf="@+id/gifimage"
+                            app:layout_constraintStart_toStartOf="@+id/gifimage"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+                        <TextView
+                            android:id="@+id/usernameLevels"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/merriweathersans_bold"
+                            android:text="User_name"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/gifimage"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.501"
+                            app:layout_constraintStart_toStartOf="@+id/gifimage"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.66" />
+
+                        <TextView
+                            android:id="@+id/userpointsLevels"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/merriweathersans_semibold"
+                            android:text="user_points"
+                            app:layout_constraintBottom_toBottomOf="@+id/gifimage"
+                            app:layout_constraintEnd_toEndOf="@+id/gifimage"
+                            app:layout_constraintHorizontal_bias="0.542"
+                            app:layout_constraintStart_toStartOf="@+id/gifimage"
+                            app:layout_constraintTop_toTopOf="@+id/gifimage"
+                            app:layout_constraintVertical_bias="0.77" />
+
+                        <TextView
+                            android:id="@+id/footerLevels"
+                            android:layout_width="295dp"
+                            android:layout_height="166dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@drawable/levelupfooter"
+                            android:fontFamily="@font/merriweathersans_semibold"
+                            android:text="\n       Secure +"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/congratsMessage"
+                            app:layout_constraintStart_toStartOf="@+id/congratsMessage"
+                            app:layout_constraintTop_toBottomOf="@+id/cheersLevels"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <ImageView
+                            android:id="@+id/cheersLevels"
+                            android:layout_width="109dp"
+                            android:layout_height="99dp"
+                            app:layout_constraintEnd_toEndOf="@+id/congratsMessage"
+                            app:layout_constraintTop_toBottomOf="@+id/congratsMessage"
+                            app:srcCompat="@drawable/celebrationsemoji" />
+
+                        <ImageView
+                            android:id="@+id/graphLevels"
+                            android:layout_width="104dp"
+                            android:layout_height="116dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/footerLevels"
+                            app:layout_constraintEnd_toEndOf="@+id/footerLevels"
+                            app:layout_constraintTop_toBottomOf="@+id/pointsRequiredLevels"
+                            app:srcCompat="@drawable/flaginlevelup" />
+
+                        <TextView
+                            android:id="@+id/pointsRequiredLevels"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="72dp"
+                            android:fontFamily="@font/merriweathersans_semibold"
+                            android:text="user_reqpts"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="@+id/subscriptionLevels"
+                            app:layout_constraintTop_toBottomOf="@+id/subscriptionLevels" />
+
+                        <TextView
+                            android:id="@+id/subscriptionLevels"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/merriweathersans_semibold"
+                            android:text="To Unlock Free Subscription"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/footerLevels" />
+
+                        <ImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="215dp"
+                            android:layout_height="156dp"
+                            app:layout_constraintEnd_toEndOf="@+id/gifimage"
+                            app:layout_constraintStart_toStartOf="@+id/gifimage"
+                            app:layout_constraintTop_toBottomOf="@+id/gifimage"
+                            app:srcCompat="@drawable/celebrations" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
