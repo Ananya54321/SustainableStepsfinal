@@ -1,4 +1,4 @@
-# 🌐 Community Engagement and User Authentication App Documentation
+# 🌐 Waste Segregation App
 
 ## Introduction
 
